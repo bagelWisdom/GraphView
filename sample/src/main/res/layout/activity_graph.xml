@@ -31,17 +31,28 @@
         android:src="@drawable/ic_add_white_24dp" />
 
     <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/zoomLay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical|horizontal"
-        app:hasClickableChildren="true">
+        app:hasClickableChildren="true"
+        app:maxZoom="12.0"
+        app:transformation="centerInside"
+        app:transformationGravity="auto"
+        app:minZoom="12"
+
+        app:overPinchable = "false"
+        app:overScrollHorizontal ="false"
+        app:overScrollVertical  = "false">
+        <!--app:flingEnabled  = "false"-->
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="50dp"
-            android:layout_marginTop="?attr/actionBarSize" />
+            android:layout_marginTop="?attr/actionBarSize"
+            android:padding="50dp" />
     </com.otaliastudios.zoom.ZoomLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -14,9 +14,9 @@ class BuchheimWalkerActivity : GraphActivity() {
 
     public override fun setLayoutManager() {
         val configuration = BuchheimWalkerConfiguration.Builder()
-                .setSiblingSeparation(100)
-                .setLevelSeparation(100)
-                .setSubtreeSeparation(100)
+                .setSiblingSeparation(300)
+                .setLevelSeparation(300)
+                .setSubtreeSeparation(300)
                 .setOrientation(BuchheimWalkerConfiguration.ORIENTATION_TOP_BOTTOM)
                 .build()
         recyclerView.layoutManager = BuchheimWalkerLayoutManager(this, configuration)
