@@ -3,13 +3,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'com.vanniktech.maven.publish'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 24
+        targetSdkVersion 28
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -25,6 +23,8 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
+    namespace 'dev.bandb.graphview'
+    buildToolsVersion '31.0.0'
 }
 
 dependencies {

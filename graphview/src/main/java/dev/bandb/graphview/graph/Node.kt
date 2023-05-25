@@ -7,7 +7,9 @@ data class Node(var data: Any) {
     // TODO make private
     val position: VectorF = VectorF()
     val size: Size = Size()
+    //--------
 
+    //--------
     var height: Int
         get() = size.height
         set(value) {

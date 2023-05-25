@@ -1,1 +1,2 @@
 include ':graphview', ':sample'
+include ':zoom'
